@@ -17,7 +17,7 @@ and platform-wise revenue performance for a clear financial overview.
 # 1) Load data (cached)
 # -------------------------
 @st.cache_data
-def load_data(path="D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Sales\Revenue.csv"):
+def load_data(path="Sales/Revenue.csv"):
     df = pd.read_csv(path)
     # ensure numeric column for revenue
     if 'Order Value (INR)' in df.columns:
@@ -31,12 +31,12 @@ def load_data(path="D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\S
     return df
 
 # Change this path if your CSV is elsewhere
-DATA_PATH = "D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Sales\Revenue.csv"
+DATA_PATH = "Sales/Revenue.csv"
 
 try:
     df_sales = load_data(DATA_PATH)
 except FileNotFoundError:
-    st.error(f"Data file not found at `{DATA_PATH}`. Put `Revenue.csv` in the `data/` folder or update the path.")
+    st.error(f"Data file not found at `{DATA_PATH}`. Put `Revenue.csv` in the `Sales/` folder or update the path.")
     st.stop()
 
 # -------------------------
