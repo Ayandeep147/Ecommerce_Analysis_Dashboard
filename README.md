@@ -57,8 +57,8 @@ E-Commerce Platform & Delivery Analysis/
 
 ### 1. Clone this repository
 ```bash
-git clone https://github.com/<your-username>/E-Commerce-Platform-Delivery-Analysis.git
-cd E-Commerce-Platform-Delivery-Analysis
+git clone https://github.com/<your-username>/Ecommerce_Delivery_Dashboard.git
+cd Ecommerce_Delivery_Dashboard
 ```
 
 ### 2. Install dependencies
