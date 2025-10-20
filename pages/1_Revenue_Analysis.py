@@ -17,7 +17,7 @@ and platform-wise revenue performance for a clear financial overview.
 # 1) Load data (cached)
 # -------------------------
 @st.cache_data
-def load_data(path="Sales/Revenue.csv"):
+def load_data(path="../Sales/Revenue.csv"):
     df = pd.read_csv(path)
     # ensure numeric column for revenue
     if 'Order Value (INR)' in df.columns:
@@ -31,7 +31,7 @@ def load_data(path="Sales/Revenue.csv"):
     return df
 
 # Change this path if your CSV is elsewhere
-DATA_PATH = "Sales/Revenue.csv"
+DATA_PATH = "../Sales/Revenue.csv"
 
 try:
     df_sales = load_data(DATA_PATH)
@@ -215,4 +215,5 @@ if {'Platform', 'Product Category', 'Order Value (INR)'}.issubset(df.columns):
     st.dataframe(category_contribution.sort_values(['Platform', 'Contribution (%)'], ascending=[True, False]))
 else:
     st.info("Requires `Platform`, `Product Category`, and `Order Value (INR)` columns to show category contribution.")
+
 
