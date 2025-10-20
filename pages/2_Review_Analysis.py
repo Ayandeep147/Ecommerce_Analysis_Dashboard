@@ -16,7 +16,7 @@ accuracy, and city-wise popularity based on review data.
 # Load data
 # ----------------------
 @st.cache_data
-def load_data(path="Sales/Reviews.csv"):
+def load_data(path="../Sales/Reviews.csv"):
     df = pd.read_csv(path)
     # Ensure numeric columns
     df['Customer Service Rating'] = pd.to_numeric(df['Customer Service Rating'], errors='coerce').fillna(0)
@@ -25,7 +25,7 @@ def load_data(path="Sales/Reviews.csv"):
     df['Product Availability'] = pd.to_numeric(df['Product Availability'], errors='coerce').fillna(0)
     return df
 
-df_review = load_data("Sales/Reviews.csv")  # change path if needed
+df_review = load_data("../Sales/Reviews.csv")  # change path if needed
 
 # ----------------------
 # Sidebar filters
@@ -201,5 +201,6 @@ else:
     )
     fig_order.update_traces(texttemplate='%{text:.1f}%', textposition='inside', textfont_color='white')
     st.plotly_chart(fig_order, use_container_width=True)
+
 
 
