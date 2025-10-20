@@ -20,7 +20,7 @@ with col3:
 
 with col4:
     if st.button("📘 Project Overview", use_container_width=True):
-        st.switch_page("Pages/3_Project_Overview.py")
+        st.switch_page("pages/3_Project_Overview")
 
 # --- Spacer before footer ---
 st.write("")
@@ -36,13 +36,16 @@ colA, colB, colC = st.columns(3)
 
 with colA:
     st.image("Images/Jiomart.png", width=110)
+    st.image("Images/Jiomart.png", width=110)
     #st.caption("JioMart")
 
 with colB:
     st.image("Images/Swiggy.png", width=130)
+    st.image("Images/Swiggy.png", width=130)
     #st.caption("Swiggy")
 
 with colC:
+    st.image("Images/Blinkit.svg", width=100)
     st.image("Images/Blinkit.svg", width=100)
     #st.caption("Blinkit")
 
