@@ -35,14 +35,14 @@ st.caption("Powered by data from leading E-commerce apps.")
 colA, colB, colC = st.columns(3)
 
 with colA:
-    st.image("D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Images\Jiomart.png", width=110)
+    st.image("Images/Jiomart.png", width=110)
     #st.caption("JioMart")
 
 with colB:
-    st.image("D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Images\Swiggy.png", width=130)
+    st.image("Images/Swiggy.png", width=130)
     #st.caption("Swiggy")
 
 with colC:
-    st.image("D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Images\Blinkit.svg", width=100)
+    st.image("Images/Blinkit.svg", width=100)
     #st.caption("Blinkit")
 
