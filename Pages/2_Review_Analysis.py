@@ -16,7 +16,7 @@ accuracy, and city-wise popularity based on review data.
 # Load data
 # ----------------------
 @st.cache_data
-def load_data(path="D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Sales\Reviews.csv"):
+def load_data(path="Sales/Reviews.csv"):
     df = pd.read_csv(path)
     # Ensure numeric columns
     df['Customer Service Rating'] = pd.to_numeric(df['Customer Service Rating'], errors='coerce').fillna(0)
@@ -25,7 +25,7 @@ def load_data(path="D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\S
     df['Product Availability'] = pd.to_numeric(df['Product Availability'], errors='coerce').fillna(0)
     return df
 
-df_review = load_data("D:\VS Codes\Python\E-Commerce Platform & Delivery Analysis\Sales\Reviews.csv")  # change path if needed
+df_review = load_data("Sales/Reviews.csv")  # change path if needed
 
 # ----------------------
 # Sidebar filters
