@@ -12,15 +12,15 @@ col1, col2, col3, col4, col5 = st.columns([1, 2, 2, 2, 1])
 
 with col2:
     if st.button("📊 Revenue Analysis", use_container_width=True):
-        st.switch_page("1_Revenue_Analysis.py")
+        st.switch_page("1_Revenue_Analysis")
 
 with col3:
     if st.button("⭐ Review Analysis", use_container_width=True):
-        st.switch_page("2_Review_Analysis.py")
+        st.switch_page("2_Review_Analysis")
 
 with col4:
     if st.button("📘 Project Overview", use_container_width=True):
-        st.switch_page("3_Project_Overview.py")
+        st.switch_page("3_Project_Overview")
 
 # --- Spacer before footer ---
 st.write("")
