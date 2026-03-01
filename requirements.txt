@@ -1,5 +1,6 @@
-plotly.express
-numpy
-pandas
-streamlit
-altair<5
+streamlit>=1.32.0
+pandas>=2.0
+numpy>=1.26
+plotly>=5.0
+statsmodels>=0.14
+scipy>=1.11
