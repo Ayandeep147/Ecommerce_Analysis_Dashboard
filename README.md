@@ -99,7 +99,8 @@ streamlit run Home.py
 
 ## 🧑‍💻 Contributors
 
-- **Ayandeep Roy** – Developer 
+- **Ayandeep Roy** – Developer
+- **Ankit Saha** – Developer
 
 ---
 
